@@ -67,6 +67,7 @@ jobs:
                        +force_dex_wqhd           \
                        -morosound                \
                        +boeffla_wl_blocker       \
+                       +noswap                   \
                        +fp_boost                 \
                        +1000hz                   \
                        +io_anxiety               \
@@ -76,7 +77,6 @@ jobs:
                        +tcp_cubic                \
                        +tcp_westwood             \
                        +io_zen                   \
-                       +noswap                   \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
