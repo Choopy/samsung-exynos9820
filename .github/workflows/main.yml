@@ -73,6 +73,7 @@ jobs:
                        +performance              \
                        +tcp_westwood             \
                        +io_zen                   \
+                       +fake_config              \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
