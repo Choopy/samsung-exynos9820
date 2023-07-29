@@ -71,6 +71,8 @@ jobs:
                        +1000hz                   \
                        +fp_boost                 \
                        +tcp_westwood             \
+                       +nozram                   \
+                       +noswap                   \
                        
           2>&1 | tee config.info
 
