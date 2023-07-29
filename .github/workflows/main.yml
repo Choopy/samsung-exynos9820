@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  TOOLCHAIN: samsung
+  TOOLCHAIN: cruel
   INSTALLER: yes
 
 jobs:
@@ -66,12 +66,12 @@ jobs:
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd           \
-                       -morosound                \
+                       +morosound                \
                        +boeffla_wl_blocker       \
                        +1000hz                   \
                        +fp_boost                 \
-                       +simple_lmk               \
                        +tcp_westwood             \
+                       
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
