@@ -60,13 +60,23 @@ jobs:
                        +magisk                   \
                        +nohardening              \
                        +ttl                      \
-                       +wireguard                \
+                       -wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd           \
-                       +morosound                \
+                       -morosound                \
                        +boeffla_wl_blocker       \
+                       +fp_boost                 \
+                       +1000hz                   \
+                       +io_anxiety               \
+                       +performance              \
+                       +io_maple                 \
+                       +io_fiops                 \
+                       +tcp_cubic                \
+                       +tcp_westwood             \
+                       +io_zen                   \
+                       +noswap                   \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
