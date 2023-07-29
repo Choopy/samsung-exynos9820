@@ -67,14 +67,10 @@ jobs:
                        +force_dex_wqhd           \
                        -morosound                \
                        +boeffla_wl_blocker       \
-                       +noswap                   \
-                       +fp_boost                 \
                        +1000hz                   \
-                       +io_anxiety               \
+                       +fp_boost                 \
+                       +simple_lmk               \
                        +performance              \
-                       +io_maple                 \
-                       +io_fiops                 \
-                       +tcp_cubic                \
                        +tcp_westwood             \
                        +io_zen                   \
           2>&1 | tee config.info
