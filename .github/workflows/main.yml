@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  TOOLCHAIN: system-gcc
+  TOOLCHAIN: samsung
   INSTALLER: yes
 
 jobs:
@@ -57,6 +57,7 @@ jobs:
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
+                       +performance              \
                        +magisk                   \
                        +nohardening              \
                        +ttl                      \
@@ -70,10 +71,7 @@ jobs:
                        +1000hz                   \
                        +fp_boost                 \
                        +simple_lmk               \
-                       +performance              \
                        +tcp_westwood             \
-                       +io_zen                   \
-                       +fake_config              \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
