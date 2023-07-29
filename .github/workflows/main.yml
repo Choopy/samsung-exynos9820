@@ -71,7 +71,6 @@ jobs:
                        +fp_boost                 \
                        +simple_lmk               \
                        +performance              \
-                       +nozram                   \
                        +io_maple                 \
                        +io_fiops                 \
                        +io_sio                   \
@@ -84,6 +83,8 @@ jobs:
                        +tcp_htcp                 \
                        +tcp_bbr                  \
                        +tcp_bic                  \
+                       +noswap                   \
+                       
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
