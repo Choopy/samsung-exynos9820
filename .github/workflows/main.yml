@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 env:
-  TOOLCHAIN: cruel
+  TOOLCHAIN: google
   INSTALLER: yes
 
 jobs:
@@ -70,18 +70,7 @@ jobs:
                        +1000hz                   \
                        +fp_boost                 \
                        +simple_lmk               \
-                       +io_maple                 \
-                       +io_fiops                 \
-                       +io_sio                   \
-                       +io_zen                   \
-                       +io_anxiety               \
-                       +io_noop                  \
-                       +io_cfq                   \
-                       +tcp_cubic                \
-                       +tcp_westwood             \
-                       +tcp_htcp                 \
-                       +tcp_bbr                  \
-                       +tcp_bic                  \
+                       +performance              \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
