@@ -68,7 +68,7 @@ jobs:
                        -morosound                \
                        +boeffla_wl_blocker       \
                        +1000hz                   \
-                       +fp_boost                 \
+                       -fp_boost                 \
                        +io_maple                 \
                        +io_fiops                 \
                        +io_sio                   \
